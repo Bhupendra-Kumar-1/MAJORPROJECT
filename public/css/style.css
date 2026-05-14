@@ -1,0 +1,198 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-family: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* Footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links, 
+.f-info-socials, 
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i {
+   font-size: 1.2rem;
+   margin-right: 1rem;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+/* Card Effect */
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New Page */
+
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Edit Page */
+
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Show Page */
+
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0; 
+}
+
+/* Map */
+#map {
+    height: 400px;
+    width: 80vh;
+}
+
+/* ----------------------------------------------------- */
+
+
+.navbar-collapse.show,
+.navbar-collapse.collapsing {
+  position: fixed;
+  top: 4.5rem;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  z-index: 9999;
+}
+
+/* -------------------------------------- */
+
+/* Fix overflow on small screens */
+body {
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    overflow-x: hidden;
+}
+
+/* ----------------------------------------- */
+
+
+/* Mobile Responsive Fix */
+
+.review-card {
+    width: 100%;
+    overflow: hidden;
+}
+
+.review-card .card-body {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.review-card .starability-result {
+    font-size: 0.8rem;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+}
+
+@media (max-width: 576px) {
+
+    .show-card,
+    .col-8,
+    .col-6 {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .edit-btn {
+        width: 100%;
+    }
+
+    #map {
+        height: 250px;
+    }
+}
